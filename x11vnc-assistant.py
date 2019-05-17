@@ -1,31 +1,33 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Для работы требуется установить пакет python-wx : apt install python-wxgtk3.0
-import wx, socket, os, subprocess, random, getpass
+import wx, socket, os, subprocess, random, getpass, gettext
 
-basePath = os.path.dirname(__file__)
-print basePath
-trayTooltip_text = 'Подключение к сессии (x11vnc-assistant)'
+#basePath = os.path.dirname(__file__)
+basePath = '.'
+gettext.install('x11vnc-assistant', basePath+'/locale', unicode=True)
+
+trayTooltip_text = _('Connect to session (x11vnc-assistant)')
+windowTitle_text = _('Preferences of x11vnc-assistant')
+windowHeader_text = _('Information for connect to session:')
+separator = ', ' # Разделитель для показа параметров
+menuInfo_text = _('Information')
+menuExit_text = _('Quit x11vnc-assistant')
+hostName_text = _('Server')
+portNumber_text = _('Port')
+passwdFull_text = _('Full Password')
+passwdView_text = _('View Password')
+params_text = _('Parameters list:')
+buttonClose_text = _('Close')
 trayIcon = basePath + '/icons/x11vnc24.png'
 windowIcon = basePath + '/icons/x11vnc24.png'
-separator = ', ' # Разделитель для показа параметров
-windowTitle_text = 'Параметры x11vnc-assistant'
-windowHeader_text = 'Информация для подключения к сессии:'
-menuInfo_text = 'Информация'
-menuExit_text = 'Завершить x11vnc-assistant'
-hostName_text = 'Имя сервера'
-portNumber_text = 'Номер порта'
-passwdFull_text = 'Пароль для управления'
-passwdRead_text = 'Пароль для просмотра'
-params_text = 'Список параметров:'
-buttonClose_text = 'Закрыть'
 passwdFull = (''.join([random.choice(list('1234567890')) for x in range(5)]))
 passwdRead = (''.join([random.choice(list('1234567890')) for x in range(3)]))
 filePasswd = '/tmp/.x11vnc-' + getpass.getuser() + '-passwd'
 fileFlag = '/tmp/.x11vnc-' + getpass.getuser()
 tag = 'x11vnc-' + getpass.getuser()
 hostName = socket.getfqdn()
-portNumber = ''	# Номер порта x11vnc
+portNumber = ''	 # Номер порта x11vnc
 
 # Запуск только одного экземпляра скрипта
 cmd = ['pgrep -f ' + os.path.basename(__file__)]
@@ -125,7 +127,7 @@ class SingleInstanceFrame(wx.Frame):
 	sizer.Add(wx.StaticText(panel, label = passwdFull_text), pos=(4, 0), span=(1,1), flag=wx.LEFT|wx.TOP, border=10)
 	sizer.Add(wx.TextCtrl(panel, value = passwdFull, style = wx.TE_READONLY), pos=(4, 1), span=(1, 3), flag=wx.TOP, border=5)
 
-	sizer.Add(wx.StaticText(panel, label = passwdRead_text), pos=(5, 0), span=(1,1), flag=wx.LEFT|wx.TOP, border=10)
+	sizer.Add(wx.StaticText(panel, label = passwdView_text), pos=(5, 0), span=(1,1), flag=wx.LEFT|wx.TOP, border=10)
 	sizer.Add(wx.TextCtrl(panel,value = passwdRead, style = wx.TE_READONLY), pos=(5, 1), span=(1, 3), flag=wx.TOP, border=5)
 
 	sizer.Add(wx.StaticLine(panel), pos=(6, 0), span=(1, 6), flag=wx.EXPAND|wx.BOTTOM, border=5)
