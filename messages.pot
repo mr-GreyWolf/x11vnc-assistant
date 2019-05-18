@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-05-17 14:41+MSK\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: x11vnc-assistant.py:9
+msgid "Connect to session (x11vnc-assistant)"
+msgstr ""
+
+#: x11vnc-assistant.py:10
+msgid "Preferences of x11vnc-assistant"
+msgstr ""
+
+#: x11vnc-assistant.py:11
+msgid "Information for connect to session:"
+msgstr ""
+
+#: x11vnc-assistant.py:13
+msgid "Information"
+msgstr ""
+
+#: x11vnc-assistant.py:14
+msgid "Quit x11vnc-assistant"
+msgstr ""
+
+#: x11vnc-assistant.py:15
+msgid "Server"
+msgstr ""
+
+#: x11vnc-assistant.py:16
+msgid "Port"
+msgstr ""
+
+#: x11vnc-assistant.py:17
+msgid "Full Password"
+msgstr ""
+
+#: x11vnc-assistant.py:18
+msgid "View Password"
+msgstr ""
+
+#: x11vnc-assistant.py:19
+msgid "Parameters list:"
+msgstr ""
+
+#: x11vnc-assistant.py:20
+msgid "Close"
+msgstr ""
+
