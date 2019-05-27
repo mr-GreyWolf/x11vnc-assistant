@@ -33,3 +33,9 @@ port=ask5901
 username=na
 password=ask
 ```
+## IceWM
+Пример строки запуска для [[IceWM]](https://github.com/bbidulock/icewm)
+```
+prog "=  Дистанционный помощник" /opt/x11vnc-assistant/icons/x11vnc.ico /opt/x11vnc-assistant/x11vnc-assistant.py
+```
+
