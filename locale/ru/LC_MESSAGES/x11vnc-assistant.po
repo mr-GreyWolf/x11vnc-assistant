@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2019-05-17 14:09+MSK\n"
-"PO-Revision-Date: 2019-05-17 14:35+0300\n"
+"PO-Revision-Date: 2019-05-27 11:05+0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,13 +18,13 @@ msgstr ""
 
 # trayTooltip_text
 #: x11vnc-assistant.py
-msgid "Connect to session (x11vnc-assistant)"
-msgstr "Подключение к сессии (x11vnc-assistant)"
+msgid "Connect to session (Remote Assistant)"
+msgstr "Подключение к сессии (Дистанционный помощник)"
 
 # windowTitle_text
 #: x11vnc-assistant.py
-msgid "Preferences of x11vnc-assistant"
-msgstr "Параметры x11vnc-assistant"
+msgid "Preferences of Remote Assistant"
+msgstr "Параметры дистанционного помощника"
 
 # windowHeader_text
 #: x11vnc-assistant.py
@@ -38,8 +38,8 @@ msgstr "Информация"
 
 # menuExit_text
 #: x11vnc-assistant.py
-msgid "Quit x11vnc-assistant"
-msgstr "Завершить x11vnc-assistant"
+msgid "Quit Remote Assistant"
+msgstr "Завершить дистанционный помощник"
 
 # hostName_text
 #: x11vnc-assistant.py
