@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Для работы требуется установить пакет python-wx : apt install python-wxgtk3.0
-import wx, socket, os, subprocess, random, getpass, gettext
+import wx, socket, os, subprocess, random, getpass, gettext, pwd
 
 basePath = os.path.dirname(__file__)
 gettext.install('x11vnc-assistant', basePath+'/locale', unicode=True)
@@ -29,11 +29,10 @@ hostName = socket.getfqdn()
 portNumber = ''	 # Номер порта x11vnc
 
 # Запуск только одного экземпляра скрипта
-cmd = ['pgrep -f --nslist ' +getpass.getuser() + ' ' + os.path.basename(__file__)]
+cmd = [ 'pgrep -f ' + os.path.basename(__file__)  + ' -U ' + str(pwd.getpwuid(os.getuid()).pw_uid) ]
 process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 my_pid, err = process.communicate()
-l=len(my_pid.splitlines())
-if l >= 3: exit()
+if len(my_pid.splitlines()) >= 3: exit()
 
 def create_menu_item(menu, label, func):
     item = wx.MenuItem(menu, -1, label)
