@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-05-17 14:41+MSK\n"
+"POT-Creation-Date: 2019-05-27 11:05+MSK\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,47 +15,47 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: x11vnc-assistant.py:9
-msgid "Connect to session (x11vnc-assistant)"
-msgstr ""
-
 #: x11vnc-assistant.py:10
-msgid "Preferences of x11vnc-assistant"
+msgid "Connect to session (Remote Assistant)"
 msgstr ""
 
 #: x11vnc-assistant.py:11
+msgid "Preferences of Remote Assistant"
+msgstr ""
+
+#: x11vnc-assistant.py:12
 msgid "Information for connect to session:"
 msgstr ""
 
-#: x11vnc-assistant.py:13
+#: x11vnc-assistant.py:14
 msgid "Information"
 msgstr ""
 
-#: x11vnc-assistant.py:14
-msgid "Quit x11vnc-assistant"
-msgstr ""
-
 #: x11vnc-assistant.py:15
-msgid "Server"
+msgid "Quit Remote Assistant"
 msgstr ""
 
 #: x11vnc-assistant.py:16
-msgid "Port"
+msgid "Server"
 msgstr ""
 
 #: x11vnc-assistant.py:17
-msgid "Full Password"
+msgid "Port"
 msgstr ""
 
 #: x11vnc-assistant.py:18
-msgid "View Password"
+msgid "Full Password"
 msgstr ""
 
 #: x11vnc-assistant.py:19
-msgid "Parameters list:"
+msgid "View Password"
 msgstr ""
 
 #: x11vnc-assistant.py:20
+msgid "Parameters list:"
+msgstr ""
+
+#: x11vnc-assistant.py:21
 msgid "Close"
 msgstr ""
 

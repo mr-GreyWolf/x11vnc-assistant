@@ -4,15 +4,14 @@
 import wx, socket, os, subprocess, random, getpass, gettext
 
 basePath = os.path.dirname(__file__)
-#basePath = '.'
 gettext.install('x11vnc-assistant', basePath+'/locale', unicode=True)
 
-trayTooltip_text = _('Connect to session (x11vnc-assistant)')
-windowTitle_text = _('Preferences of x11vnc-assistant')
+trayTooltip_text = _('Connect to session (Remote Assistant)')
+windowTitle_text = _('Preferences of Remote Assistant')
 windowHeader_text = _('Information for connect to session:')
 separator = ', ' # Разделитель для показа параметров
 menuInfo_text = _('Information')
-menuExit_text = _('Quit x11vnc-assistant')
+menuExit_text = _('Quit Remote Assistant')
 hostName_text = _('Server')
 portNumber_text = _('Port')
 passwdFull_text = _('Full Password')
