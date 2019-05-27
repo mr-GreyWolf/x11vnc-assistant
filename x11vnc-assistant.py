@@ -3,8 +3,8 @@
 # Для работы требуется установить пакет python-wx : apt install python-wxgtk3.0
 import wx, socket, os, subprocess, random, getpass, gettext
 
-#basePath = os.path.dirname(__file__)
-basePath = '.'
+basePath = os.path.dirname(__file__)
+#basePath = '.'
 gettext.install('x11vnc-assistant', basePath+'/locale', unicode=True)
 
 trayTooltip_text = _('Connect to session (x11vnc-assistant)')
