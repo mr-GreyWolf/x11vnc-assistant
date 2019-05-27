@@ -1,5 +1,7 @@
 # x11vnc-assistant
 
+[Документация на русском](https://github.com/mr-GreyWolf/x11vnc-assistant/wiki/Index-(Russian))
+
 ![x11vnc Logo](/icons/x11vnc24.png)
 
 Данное решение позволяет пользователю самостоятельно разрешить/запретить доступ к своей сессии на сервере; для доступа используется сервер [x11vnc](http://www.karlrunge.com/x11vnc/), который запускается от имени текущего пользователя. 
