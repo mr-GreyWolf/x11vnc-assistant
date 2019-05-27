@@ -29,7 +29,7 @@ hostName = socket.getfqdn()
 portNumber = ''	 # Номер порта x11vnc
 
 # Запуск только одного экземпляра скрипта
-cmd = ['pgrep -f ' + os.path.basename(__file__)]
+cmd = ['pgrep -f --nslist ' +getpass.getuser() + ' ' + os.path.basename(__file__)]
 process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 my_pid, err = process.communicate()
 l=len(my_pid.splitlines())
