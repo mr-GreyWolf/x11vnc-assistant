@@ -4,7 +4,7 @@
 
 Скрипт работает только в Python 2
 
-The script only works in Python 2 
+The script works only in Python 2 
 
 [Документация на русском](https://github.com/mr-GreyWolf/x11vnc-assistant/wiki/Index-(Russian))
 
